@@ -1,0 +1,45 @@
+package com.sickray.games.BoE;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Tile {
+GameEng game;
+int x, y;
+int oX, oY;
+
+
+
+public Tile(int x,int y, GameEng game){
+	
+	this.oX = 16 * x;
+	this.oY = 16 * y;
+	this.game = game;
+}
+public void tick(GameEng game){
+	this.game = game;
+	
+	x = oX + game.xOffset;
+	y = oY + game.yOffset;
+	
+}
+
+
+
+
+public void render(Graphics g){
+	
+	
+	
+ g.setColor(Color.green);
+	
+	g.drawRect( x, y, 16, 16);
+	
+	
+	
+	
+}
+
+
+
+}
