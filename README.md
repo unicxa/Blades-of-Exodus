@@ -1,5 +1,5 @@
  # Blades of Exodus
- 
+![alt text](https://unicxa.github.io/BOE.gif)
 BOE is A Opensource Game Engine. Based Purely In Java.
 This Is Currently A Homebrew Project But Any Acitive Github Communty User Can Modify / Add to The Source Code. The Main Goal Of This project is To Make Game programming Simple With A Easy To Use API. Our First Step is To Get A Base Game Created. Then From There Make The Game Engine Logic Into A Easy To Use Libray With Step-By-Step Tutorials. A To-Do(s) List Below Follows. 
 ----
@@ -21,6 +21,11 @@ Here is a list of To-Do(s) For The Current Build(s):
 Feel Free To E-mail Me At connellykevin5@gmail.com
 
 ---
+#### Builds
+0.01V
+0.02V
+
+
 #### Contributors 
  Contributors to this repo will be listed in The Main Branch In The Credits class
  > To-Do - Not Implented As of Yet
