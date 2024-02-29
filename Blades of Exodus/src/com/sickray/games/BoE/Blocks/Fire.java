@@ -6,7 +6,9 @@ import java.util.LinkedList;
 
 import com.sickray34s.Enum.ObjectID;
 
-public class Fire extends ObjectBase {public Fire(float x, float y, ObjectID Id) {
+public class Fire extends ObjectBase {
+	
+	public Fire(float x, float y, ObjectID Id) {
 		super(x, y, Id);
 		// TODO Auto-generated constructor stub
 	}
@@ -31,24 +33,24 @@ public void render(Graphics g) {
 @Override
 public Rectangle getBoundsUp() {
 	// TODO Auto-generated method stub
-	return null;
+	 return new Rectangle((int)x,(int)y, 32, 32);
 }
 
 @Override
 public Rectangle getBoundsDown() {
 	// TODO Auto-generated method stub
-	return null;
+	return new Rectangle((int)x,(int)y, 32, 32);
 }
 
 @Override
 public Rectangle getBoundsLeft() {
 	// TODO Auto-generated method stub
-	return null;
+	return new Rectangle((int)x,(int)y, 32, 32);
 }
 
 @Override
 public Rectangle getBoundsRight() {
 	// TODO Auto-generated method stub
-	return null;
+	return new Rectangle((int)x,(int)y, 32, 32);
 }
 }

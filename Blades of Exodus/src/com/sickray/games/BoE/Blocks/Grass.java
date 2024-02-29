@@ -23,7 +23,8 @@ public class Grass extends ObjectBase {
 	@Override
 	public void render(Graphics g) {
     g.setColor(Color.GREEN);
-    g.fillRect((int)x, (int)y, 16, 16);
+   // g.drawImage(img, 0, 0, null);
+    g.fillRect((int)x, (int)y, 32, 32);
 		
 	}
 
@@ -93,31 +94,31 @@ public class Grass extends ObjectBase {
 		return Id;
 	}
 	public Rectangle getBounds(){
-		return new Rectangle((int)x,(int)y, 30, 30);
+		return new Rectangle((int)x,(int)y, 32, 32);
 	}
 
 	@Override
 	public Rectangle getBoundsUp() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Rectangle((int)x,(int)y, 32, 32);
 	}
 
 	@Override
 	public Rectangle getBoundsDown() {
 		// TODO Auto-generated method stub
-		return new Rectangle((int)x,(int)y, 16, 16);
+		return new Rectangle((int)x,(int)y, 32, 32);
 	}
 
 	@Override
 	public Rectangle getBoundsLeft() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Rectangle((int)x,(int)y, 32, 32);
 	}
 
 	@Override
 	public Rectangle getBoundsRight() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Rectangle((int)x,(int)y, 32, 32);
 	}
 
 

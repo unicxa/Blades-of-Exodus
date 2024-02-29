@@ -1,8 +1,9 @@
-package com.sickray.games.BoE.Blocks;
+  package com.sickray.games.BoE.Blocks;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -35,8 +36,21 @@ public abstract class ObjectBase {
 	protected boolean BlockStatic = true;
 	protected boolean BlockDynamic = false;
 	protected BufferedImage img = null;
+		
+	
+//Static & Dynamic Block Switch Statement
+ {
 
+		if(BlockStatic == false) {
+			BlockDynamic = true;	
+		} 
+		else 
+		if (BlockDynamic == false) {
+			BlockStatic = true;
+		}
+		
 
+}
 
     
 	public ObjectBase(float x, float y, ObjectID Id){
@@ -120,6 +134,7 @@ public abstract class ObjectBase {
 
 	public void setBlockStatic(boolean blockStatic) {
 		BlockStatic = blockStatic;
+		
 	}
 
 
@@ -130,6 +145,7 @@ public abstract class ObjectBase {
 
 	public void setBlockDynamic(boolean blockDynamic) {
 		BlockDynamic = blockDynamic;
+		
 	}
 
 
@@ -149,7 +165,8 @@ public abstract class ObjectBase {
 		 }
 		
 	
-	public void getImage(){
+	public BufferedImage getImage(){
+		return img;
 		
 	}
     
@@ -163,8 +180,8 @@ public abstract class ObjectBase {
 	}
 
 
-	public void setImage() {
-		// TODO Set Splits As PlaceHolders 2D Logic  
+	public void setImage(BufferedImage img) {
+		this.img =  img;
 		
 	}
 

@@ -9,13 +9,13 @@ import com.sickray.games.BoE.Blocks.ObjectBase;
 import com.sickray34s.Enum.ObjectID;
 
 public class Inputhandler extends KeyAdapter {
-	boolean toggle = false;
+	boolean toggle;
 	Handler handler;
 	GameEng engen;
 	Inputhandler(Handler handler, GameEng engen){
 	this.handler = handler;
 	this.engen = engen;
-		
+
 	
 	}
 	
@@ -37,22 +37,27 @@ public class Inputhandler extends KeyAdapter {
 		
 		
 		
-		
+		}
 		
 	
-    if(e.getKeyCode() == KeyEvent.VK_F1 && toggle == false){
+    if(e.getKeyCode() == KeyEvent.VK_F1 && getToggleState() == false){
     	JOptionPane.showMessageDialog(null, "By Clicking F1 You Open The DEVELOPMENT MENU Interface On the Graphics");
+    	engen.setToggle(true);
     	toggle = true;
-    	GameEng.ToggleDevMenu = toggle;
+    	
      }
-    if(e.getKeyCode() == KeyEvent.VK_F1 && toggle == true){
+    if(e.getKeyCode() == KeyEvent.VK_F1 && getToggleState() == true){
+    	engen.setToggle(false);
     	toggle = false;
-    	GameEng.ToggleDevMenu = toggle;
+    	
      }
-    
 	
-     }
+     
 	}
+	
+    boolean getToggleState() {
+    	return toggle;
+    }
 	public void keyReleased(KeyEvent e){
 		int key = e.getKeyCode();
 		for(int i = 0; i < handler.object.size(); i++){
