@@ -3,6 +3,7 @@ package com.UnicSoftware.BoE;
 import java.awt.Color;
 import java.awt.Graphics;
 
+@SuppressWarnings("unused")
 public class Tile {
 GameEng game;
 int x, y;

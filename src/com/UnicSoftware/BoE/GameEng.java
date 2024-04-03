@@ -19,6 +19,7 @@ import com.UnicSoftware.BoE.cell.Cell;
 //import com.UnicSoftware.BoE.config.ConfigParse;
 import com.UnicSoftware.BoE.maps.Map001;
 
+@SuppressWarnings("unused")
 public class GameEng extends Canvas implements Runnable {
 	Handler handler;
 	public static final long serialVersionUID = 1L;

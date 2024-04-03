@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 
 import org.simpleyaml.configuration.file.YamlFile;
 
+@SuppressWarnings("unused")
 public class ConfigParser{
 	int cellX,cellY,CellCount;
 	public ConfigParser(int cellX, int cellY, int CellCount){

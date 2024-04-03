@@ -10,6 +10,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JWindow;
 import javax.swing.SwingConstants;
 
+@SuppressWarnings("unused")
 public class Splash {
 
 	@SuppressWarnings("deprecation")

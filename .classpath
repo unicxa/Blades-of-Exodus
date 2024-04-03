@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/CONZ/Downloads/Simple-Yaml-1.8.4.jar"/>
+	<classpathentry kind="lib" path="lib/Simple-Yaml-1.8.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

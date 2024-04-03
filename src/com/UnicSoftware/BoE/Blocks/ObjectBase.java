@@ -14,6 +14,7 @@ import javax.imageio.ImageIO;
 
 import com.UnicSoftware.BoE.Enum.ObjectID;
 
+@SuppressWarnings("unused")
 public abstract class ObjectBase {
 	//BlockBase Method
 	/* TODO ADD --Modifiers-- 
